@@ -50,6 +50,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Judge Scoring</title>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -81,7 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <button type="submit">Submit Score</button>
         </form>
         <p id="flash-message"><?php echo $message; ?></p>
-        
+
         <script>
             // hide the flash message after 3 seconds
             setTimeout(() => {
