@@ -121,7 +121,7 @@ CREATE TABLE scores (
 
 ---
 
-## Potential Features (If More Time Were Available)
+## Potential Features (If More Time Was Available)
 
     - Login system for admins and judges
 
@@ -130,4 +130,3 @@ CREATE TABLE scores (
     - Add categories or scoring criteria (e.g., "Creativity", "Execution")
 
     - Admin dashboard for editing participants and scores
-    
