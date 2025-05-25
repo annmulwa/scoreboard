@@ -37,18 +37,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
     <head>
         <title>Add Judge</title>
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body class="admin-page">
         <h2>Add A New Judge</h2>
         <form method="POST" action="">
             <label>Username:</label><br>
             <input type="text" name="username"><br><br>
 
-            <label>Display Name:</label><br>
+            <label>Name:</label><br>
             <input type="text" name="display_name"><br><br>
 
             <button type="submit">Add Judge</button>
         </form>
-        <p><?php echo $message; ?></p>
+        <p id="flash-message"><?php echo $message; ?></p>
+
+        <script>
+            // hide the flash message after 3 seconds
+            setTimeout(() => {
+                const msg = document.getElementById('flash-message');
+                if (msg) {
+                    msg.style.transition = 'opacity 0.5s ease';
+                    msg.style.opacity = '0';
+                    setTimeout(() => msg.style.display = 'none', 500);
+                }
+            }, 3000);
+        </script>
     </body>
 </html>

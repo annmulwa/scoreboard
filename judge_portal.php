@@ -51,8 +51,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
     <head>
         <title>Judge Scoring</title>
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body class="judge-portal-page">
         <h2>Submit Score</h2>
         <form method="POST" action="">
             <label>Judge:</label><br>
@@ -79,6 +80,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <input type="number" name="score" min="0" max="100" required><br><br>
             <button type="submit">Submit Score</button>
         </form>
-        <p><?php echo $message; ?></p>
+        <p id="flash-message"><?php echo $message; ?></p>
+        
+        <script>
+            // hide the flash message after 3 seconds
+            setTimeout(() => {
+                const msg = document.getElementById('flash-message');
+                if (msg) {
+                    msg.style.transition = 'opacity 0.5s ease';
+                    msg.style.opacity = '0';
+                    setTimeout(() => msg.style.display = 'none', 500);
+                }
+            }, 3000);
+        </script>
     </body>
 </html>
