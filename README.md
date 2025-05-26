@@ -35,7 +35,7 @@ A minimal scoring web application built using the **LAMP** stack (Linux, Apache,
     - Access phpMyAdmin or MySQL CLI
     - Create a new database named:
         - CREATE DATABASE scoring_system;
-    - Import the provided schema (database.sql) or use the SQL above.
+    - Import the provided schema (database.sql) or use the SQL below.
 
 4. **Configure Database Connection**
 
