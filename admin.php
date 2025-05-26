@@ -1,12 +1,7 @@
 <?php
 
-// connect to the database
-$conn = new mysqli("localhost", "root", "", "scoring_system");
-
-// check the connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+// connect to the database using external config
+include 'config.php';
 
 // handle form submission
 $message = "";
