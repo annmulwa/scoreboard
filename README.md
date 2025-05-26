@@ -45,9 +45,16 @@ A minimal scoring web application built using the **LAMP** stack (Linux, Apache,
         - sudo service mysql start
 
 6. **Access the App**
-    - **Admin Panel**: http://localhost/admin.php
-    - **Judge Panel**: http://localhost/judge_portal.php
-    - **Scoreboard**: http://localhost/scoreboard.php
+    - **Home Page**: http://localhost/your_folder/index.php
+    - **Admin Panel**: http://localhost/your_folder/admin.php
+    - **Judge Panel**: http://localhost/your_folder/judge_portal.php
+    - **Scoreboard**: http://localhost/your_folder/scoreboard.php
+
+---
+
+## 🌐 Public Preview
+
+Live URL: https://scoring-system.infinityfreeapp.com/
 
 ---
 
